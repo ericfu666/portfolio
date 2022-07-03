@@ -1,0 +1,91 @@
+.back{
+	font-family: 'Sora', sans-serif;
+	font-size: 2.5vw;
+	margin-left: 2.5vw;
+	padding-top: 1vh;
+}
+
+.back a{
+	text-decoration: none;
+	color: #1b1b1b;
+}
+
+.other_project{
+	font-family: 'Sora', sans-serif;
+	font-size: 2.5vw;
+	text-align: center;
+	padding-bottom: 5vh;
+}
+
+.other_project a{
+	text-decoration: underline;
+	color: #1b1b1b;
+}
+
+main.project_detail{
+	font-size: 2vw;
+	background-color: white;
+	width: 100%;
+	margin-bottom: 0;
+	color:black;
+}
+
+main.project_detail img{
+	width:100%;
+}
+
+.project_detail .regular_text{
+	font-size: 4vw;
+	margin-left: 3vw;
+	margin-bottom: 3vh;
+}
+
+.what{
+	color:#4F7CAC;
+	font-size: 100%;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 3vh;
+}
+
+.project_detail iframe{
+	width: 85%;
+	height: 25vh;
+	display: block;
+	margin:0 auto;
+}
+
+/* tablet view */
+/* *****************************************************************************/
+@media only screen 
+and (min-width : 481px)
+and (max-width: 999px)
+and (orientation: portrait)
+{
+	.project_detail iframe{
+		height: 45vh;
+	}
+}
+
+/* desktop view */
+/* *****************************************************************************/
+@media only screen and (min-width: 1024px)
+{
+	.project_detail .regular_text{
+		font-size: 2vw;
+		margin-left: 1vw;
+		margin-bottom: 3vh;
+	}
+	
+	.what{
+		color:#4F7CAC;
+		font-size: 100%;
+		text-align: center;
+		font-weight: bold;
+		margin-bottom: 3vh;
+	}
+	
+	.project_detail iframe{
+		height: 80vh;
+	}
+}

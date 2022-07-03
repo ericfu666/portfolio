@@ -1,0 +1,154 @@
+/* phone view */
+/* *****************************************************************************/
+body{
+    background-color:#222222;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#logo {
+	height:5vh;
+}
+
+header{
+	height:8.5vh;
+	background-color:#1b1b1b;
+	font-family: 'Sora', sans-serif;
+	font-size: 100%;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	justify-content: space-around;
+	position: sticky;
+	top:0;
+	left:0;
+	z-index: 10;
+}
+
+.skip a{
+	background: white;
+	left: 0;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 20;
+	position: absolute;
+	top: -100px;
+	color:rgb(54, 104, 211);
+}
+  
+.skip a:focus{
+	top: 0px;
+}
+
+header li{
+	margin: 2vw;
+}
+
+header a{
+    text-decoration: none;
+	color:white
+}
+
+header a:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+	text-underline-offset: 0.2em;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: row;
+}
+
+#current{
+	color: white;
+	background: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%);
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+	border-width: 2px;
+	border-style: solid;
+	padding: 2px;
+	border-image: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%) 1;
+
+}
+
+main{
+	width: 90%;
+	margin:0 auto;
+	margin-bottom: 2vh;
+}
+
+footer{
+	background-color:#1b1b1b;
+	height:8.5vh;
+	text-align: center;
+	font-size: 120%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* tablet view */
+/* *****************************************************************************/
+@media only screen 
+and (min-width : 481px)
+and (max-width: 999px)
+and (orientation: portrait)
+{
+	#logo {
+		height:8vh;
+		margin-top: 1vh;
+	}
+	
+	header{
+		height:14vh;
+		font-size: 140%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		position: sticky;
+		top:0;
+		left:0;
+		margin-bottom: 2vh;
+		z-index: 10;
+	}
+	
+	header li{
+		margin: 0 4vw 1vw 4vw;
+	}
+		
+	main{
+		width: 85%;
+	}
+}
+
+/* desktop view */
+/* *****************************************************************************/
+@media only screen and (min-width: 1024px)
+{
+	#logo {
+		height:6vh;
+		margin-top: 1vh;
+	}
+	
+	header{
+		height:9vh;
+		font-size: 120%;
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+		padding:2vw;
+	}
+
+	header li{
+		margin: 1vw 3vw 1vw 3vw;
+	}
+	
+	main{
+		width: 85%;
+		margin:0 auto;
+	}
+}

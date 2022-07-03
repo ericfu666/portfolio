@@ -1,0 +1,177 @@
+/* phone view */
+/* *****************************************************************************/
+
+#ftc_photo{
+	margin-top: 2vh;
+	border-radius: 8%;
+}
+
+.fancy{
+	margin-top:4vh;
+}
+
+.line {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	font-size: 8vw;
+	line-height: 1.25;
+	margin-top: 1.8vh;
+	
+}
+
+.color-primary{
+	color:white;
+}
+
+.color-secondary{
+	color:rgb(161, 161, 161);
+}
+
+.word {
+	margin-right: 2vw;
+}
+
+.color{
+	display: inline-block;
+}
+
+.technology, .design{
+	display: inline;
+	background: linear-gradient(140deg, #F57684 40%,#85527d 50%,#9581c0 60%,#afc9f7 90%);
+    -webkit-background-clip: text;
+	background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.short_intro{
+	margin-top:5vh;
+	font-size: 5.1vw;
+	line-height: 1.8;
+	margin-bottom:7vh;
+}
+
+.short_intro .belief{
+	text-shadow:
+	0 0 1px #fffafa,
+	0 0 10px #ffe1e4,
+	0 0 80px #ffafbb;
+}
+
+/* tablet view */
+/* *****************************************************************************/
+@media only screen 
+and (min-width : 481px)
+and (max-width: 999px)
+and (orientation: portrait)
+{
+	#ftc_photo{
+		display: block;
+		border-radius: 8%;
+		width:65vw;
+		margin: 3vw auto;
+	}
+	
+	.line {
+		justify-content: center;
+		font-size: 7vw;
+		margin-top: 1.8vh;
+	}
+	
+	.short_intro{
+		margin-top: 5vh;
+		font-size: 4.5vw;
+		line-height: 1.8;
+		margin-bottom:7vh;
+		text-align: center;
+	}
+}
+
+/* desktop view */
+/* *****************************************************************************/
+@media only screen and (min-width: 1024px)
+{
+	main.about_main{
+		width: 80%;
+		background-image: linear-gradient(to top,rgba(34,34,34,1)  ,rgba(34,34,34,0.35) 15%,rgba(34,34,34,0) 30%),
+		linear-gradient(to bottom,rgba(34,34,34,1) ,rgba(34,34,34,0.35) 15%,rgba(34,34,34,0) 30%),
+		linear-gradient(to left,rgba(34,34,34,1) ,rgba(34,34,34,0.35) 15%,rgba(34,34,34,0) 30%),
+		linear-gradient(to right,rgba(34,34,34,1) ,rgba(34,34,34,0.35) 15%,rgba(34,34,34,0) 30%),
+		url(../imgs/personal/dark_space_night_sky_6816795.webp);	
+		background-size: cover;
+	}
+
+	.color{
+		display:inline-block;
+		transition: color 3s ease-out 1.2s;
+	}
+	
+	.color1:hover{
+		color:#ff7b8a;
+		transition: color 0.1s ease-out 0s;	
+	}
+	.color2:hover{
+		color:#ff81ec;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color3:hover{
+		color:#9e6dff;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color4:hover{
+		color:#5d98ff;
+		transition: color 0.1s ease-out 0s;
+	}
+	.color5:hover{
+		color:#66e3ff;
+		transition: color 0.1s ease-out 0s;
+	}
+
+	#desktop_intro{
+		display: grid;
+		grid-template-columns: 1.3fr 1fr;
+		grid-column-gap: 0;
+		align-items: center;
+		margin-top: 5vh;
+	}
+
+	.ftc_photo_div{
+		grid-column: 2/ span 1;
+		grid-row: 1/span 1;
+		justify-self: center;
+	}
+
+	.fancy{
+		grid-column: 1/ span 1;
+		grid-row: 1/span 1;
+		justify-self: center;
+		align-self: center;
+		width:80%;
+		margin-top:0;
+	}
+
+	#ftc_photo{
+		display: block;
+		border-radius: 8%;
+		width:98%;
+		margin: 3vw auto;
+	}
+	
+	.line {
+		font-size: 2.7vw;
+		line-height: 1.25;
+		margin-top: 2vw;	
+	}
+	
+	.short_intro{
+		width: 60%;
+		margin:0 auto;
+		margin-top:6vh;
+		font-size: 1.5vw;
+		line-height: 1.8;
+		margin-bottom:8vh;
+		text-align: left;
+	}
+}
